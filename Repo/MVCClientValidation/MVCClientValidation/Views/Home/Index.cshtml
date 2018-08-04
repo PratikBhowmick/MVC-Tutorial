@@ -1,0 +1,35 @@
+﻿@model MVCClientValidation.Models.Item
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<h2>Audit</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <div>
+        <p>Register</p>
+        <table>
+            <tr>
+                <td>@Html.LabelFor(m => m.Name)</td>
+                <td>@Html.TextBoxFor(m => m.Name)</td>
+                <td>@Html.ValidationMessageFor(m => m.Name,  "", new { @class = "text-danger" })</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Price)</td>
+                <td>@Html.TextBoxFor(m => m.Price)</td>
+                <td>@Html.ValidationMessageFor(m => m.Price)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.Quantity)</td>
+                <td>@Html.TextBoxFor(m => m.Quantity)</td>
+                <td>@Html.ValidationMessageFor(m => m.Quantity)</td>
+            </tr>
+          </table>
+        
+        <div class="col-md-offset-0 col-md-3">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+}

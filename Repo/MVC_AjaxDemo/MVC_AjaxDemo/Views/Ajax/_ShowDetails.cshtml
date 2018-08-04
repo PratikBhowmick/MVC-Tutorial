@@ -1,0 +1,15 @@
+﻿@model MVC_AjaxDemo.Models.Product
+
+@if (Model.ProdCode == null)
+{
+    <h1>Invalid Product Code</h1>
+}
+else
+{
+    <h1>Product Details</h1>
+    <h2>
+        Product Code: @Model.ProdCode<br />
+        Product Name: @Model.ProdName<br />
+        Product Quantity: @Model.ProdQty<br />
+    </h2>
+}

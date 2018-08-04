@@ -1,0 +1,27 @@
+﻿@model dynamic
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Author List Returned From WCF Service</h1>
+        <table>
+            <tr><td>AuthorId</td><td>Name</td><td>Location</td></tr>
+            @foreach (System.Data.DataRow dr in ViewBag.AuthorList.Rows)
+            {
+            <tr>
+                <td>@dr["AuthorId"]</td>
+                <td>@dr["Name"].ToString()</td>
+                <td>@dr["Location"].ToString()</td>
+            </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+G:\Example\OrganizationEmployee\OrganizationEmployee\bin\Debug\OrganizationEmployee.dacpac
+G:\Example\OrganizationEmployee\OrganizationEmployee\bin\Debug\OrganizationEmployee.dll
+G:\Example\OrganizationEmployee\OrganizationEmployee\bin\Debug\OrganizationEmployee.pdb
+G:\Example\OrganizationEmployee\OrganizationEmployee\obj\Debug\Model.xml
+G:\Example\OrganizationEmployee\OrganizationEmployee\obj\Debug\refactor.xml
+G:\Example\OrganizationEmployee\OrganizationEmployee\obj\Debug\postdeploy.sql
+G:\Example\OrganizationEmployee\OrganizationEmployee\obj\Debug\predeploy.sql
+G:\Example\OrganizationEmployee\OrganizationEmployee\obj\Debug\OrganizationEmployee.dll
+G:\Example\OrganizationEmployee\OrganizationEmployee\obj\Debug\OrganizationEmployee.pdb

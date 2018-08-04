@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Export";
+}
+
+<h2>Export</h2>
+@using (Html.BeginForm("Export", "Home", FormMethod.Post,""))
+{    
+    <div>
+        <p>Click to Export data</p>
+        <input type="submit" name="btnUpload" value="Export" class="btn btn-default" />
+    </div>
+    <div>
+        @if(ViewBag.Message !=null )
+        {
+           <p style="color:red">Sucessfully dowload complete</p>;
+        }
+    </div>
+}

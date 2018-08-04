@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ReadExcel";
+}
+
+<h2>ReadExcel</h2>
+@using (Html.BeginForm("ReadExcel", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <input type="file" id="dataFile" name="upload" />
+    </div>
+    <div>
+        <input type="submit" name="btnUpload" value="Upload" class="btn btn-default" />
+    </div>    
+}
