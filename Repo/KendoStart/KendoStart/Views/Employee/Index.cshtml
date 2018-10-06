@@ -1,0 +1,18 @@
+﻿@using Kendo.Mvc.UI
+
+<div class="container">
+    <div class="row">
+
+        @(Html.Kendo().Grid<KendoStart.Models.Employee>()
+        .Name("EmpGrid")
+        .AutoBind(true)
+        .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("EmployeeList", "Employee"))
+        )
+        )
+    </div>
+</div>
+
+
+

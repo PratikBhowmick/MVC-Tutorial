@@ -12,7 +12,7 @@
 </head>
 <body>
     <div> 
-        @foreach(var country in ViewData["countries"] as List<string>)
+        @foreach(var country in (List<string>)ViewData["countries"])
         {
             <ul>
                 <li>@country</li>

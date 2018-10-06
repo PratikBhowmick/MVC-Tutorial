@@ -11,7 +11,7 @@ namespace MVC_ViewDataTempData.Controllers
         // GET: Sample
         public ActionResult Sample()
         {
-            ViewData["CurrentdateTime"] = DateTime.Now;
+            ViewData["CurrentdateTime"] = "Hello";
 
             ViewBag.Name = "Besant Technologies";
 

@@ -32,17 +32,17 @@ namespace MVC_AttributeRouting.Controllers
         }
 
         //Option Parameter
-        //[Route("Student/Name/{Name?}")]
-        //public string GetStudent(string name)
-        //{
-        //    return "Student name is =" + name;
-        //}
-
-        //Default value Parameter
-        [Route("Student/Name/{Name=Besant}")]
-        public string GetStudents(string name)
+        [Route("Student/Name/{Name?}")]
+        public string GetStudent(string name)
         {
             return "Student name is =" + name;
         }
+
+        //Default value Parameter
+        //[Route("Student/Name/{Name=Besant}")]
+        //public string GetStudents(string name)
+        //{
+        //    return "Student name is =" + name;
+        //}
     }
 }

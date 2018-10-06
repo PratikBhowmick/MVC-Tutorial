@@ -1,0 +1,23 @@
+﻿@using Kendo.Mvc.UI
+
+<div class="container">
+    <div class="row">
+
+        @(Html.Kendo().Grid<KendoStart.Models.Employee>()
+    .Name("EmpGrid")
+    .Columns(columns=>
+    {
+        columns.Bound(t => t.EmployeeID).Title("Employee Id");
+        columns.Bound(t => t.FirstName).Title("First Name");
+        columns.Bound(t => t.LastName).Title("Last Name");
+    })    
+    .DataSource(dataSource => dataSource
+        .Ajax()        
+        .Read(read => read.Action("EmployeeList", "Employee"))
+        )
+        )
+    </div>
+</div>
+
+
+
