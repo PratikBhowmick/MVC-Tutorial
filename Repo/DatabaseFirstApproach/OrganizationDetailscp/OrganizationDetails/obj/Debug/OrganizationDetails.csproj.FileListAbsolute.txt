@@ -57,3 +57,33 @@ C:\Users\pratik\Desktop\DatabaseFirstApproach\OrganizationDetailscp\Organization
 C:\Users\pratik\Desktop\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\Antlr3.Runtime.pdb
 C:\Users\pratik\Desktop\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\obj\Debug\OrganizationDetails.dll
 C:\Users\pratik\Desktop\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\obj\Debug\OrganizationDetails.pdb
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\OrganizationDetails.dll.config
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\OrganizationDetails.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\OrganizationDetails.pdb
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\Antlr3.Runtime.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\EntityFramework.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\EntityFramework.SqlServer.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\Microsoft.Web.Infrastructure.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\Newtonsoft.Json.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Helpers.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Mvc.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Optimization.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Razor.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.WebPages.Deployment.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.WebPages.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.WebPages.Razor.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\WebGrease.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\EntityFramework.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\EntityFramework.SqlServer.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Helpers.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Mvc.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Optimization.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.Razor.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.WebPages.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.WebPages.Deployment.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\System.Web.WebPages.Razor.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\Newtonsoft.Json.xml
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\bin\Antlr3.Runtime.pdb
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\obj\Debug\OrganizationDetails.csprojResolveAssemblyReference.cache
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\obj\Debug\OrganizationDetails.dll
+E:\Besant Technology\MVC\MVC-Tutorial\Repo\DatabaseFirstApproach\OrganizationDetailscp\OrganizationDetails\obj\Debug\OrganizationDetails.pdb

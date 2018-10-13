@@ -29,9 +29,9 @@ namespace OrganizationDetails.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            DataAccess.DAL dal = new DataAccess.DAL();
-            Employee employee = dal.GetEmployee(id.Value);
-            //Employee employee = db.Employees.Find(id);
+            //DataAccess.DAL dal = new DataAccess.DAL();
+            //Employee employee = dal.GetEmployee(id.Value);
+            Employee employee = db.Employees.Find(id);
 
             if (employee == null)
             {
@@ -53,11 +53,11 @@ namespace OrganizationDetails.Controllers
         {
             if (ModelState.IsValid)
             {
-                DataAccess.DAL dal = new DataAccess.DAL();
-                dal.InsertEmployee(employee);
+                //DataAccess.DAL dal = new DataAccess.DAL();
+                //dal.InsertEmployee(employee);
 
-                //db.Employees.Add(employee);
-                //db.SaveChanges();
+                db.Employees.Add(employee);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -79,9 +79,7 @@ namespace OrganizationDetails.Controllers
             return View(employee);
         }
 
-        // POST: /Employee/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include="EmployeeID,LastName,FirstName,JoiningDate")] Employee employee)
@@ -121,13 +119,13 @@ namespace OrganizationDetails.Controllers
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        //protected override void Dispose(bool disposing)
+        //{
+        //    if (disposing)
+        //    {
+        //        db.Dispose();
+        //    }
+        //    base.Dispose(disposing);
+        //}
     }
 }

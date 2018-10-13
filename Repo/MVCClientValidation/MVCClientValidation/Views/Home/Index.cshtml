@@ -3,18 +3,32 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<style>
+    .invalidFields{
+        border: 1px solid #ff0000 !important;
+    }
+</style>
+
 <link href="~/Content/Site.css" rel="stylesheet" />
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="~/Scripts/Misc/Custom.js"></script>
+}
+
+
 <h2>Audit</h2>
 
 @using (Html.BeginForm("Index", "Home", FormMethod.Post))
 {
     <div>
-        <p>Register</p>
+
         <table>
             <tr>
                 <td>@Html.LabelFor(m => m.Name)</td>
                 <td>@Html.TextBoxFor(m => m.Name)</td>
-                <td>@Html.ValidationMessageFor(m => m.Name,  "", new { @class = "text-danger" })</td>
+                <td>@Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })</td>
             </tr>
             <tr>
                 <td>@Html.LabelFor(m => m.Price)</td>
@@ -26,10 +40,14 @@
                 <td>@Html.TextBoxFor(m => m.Quantity)</td>
                 <td>@Html.ValidationMessageFor(m => m.Quantity)</td>
             </tr>
-          </table>
-        
-        <div class="col-md-offset-0 col-md-3">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
+            <tr>
+                <td>
+                    <input type="submit" value="Create" class="btn btn-default" onclick="return validateFields()" />
+                    <input type="reset" value="Reset" class="btn btn-default" onclick="return clearFields()" />
+                </td>
+            </tr>
+        </table>
+
+
     </div>
 }

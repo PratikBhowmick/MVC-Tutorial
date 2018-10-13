@@ -44,9 +44,7 @@ namespace OrganizationDetails.Controllers
             return View();
         }
 
-        // POST: /Enrollment/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+     
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include="EnrollmentID,Band,DepartmentID,EmployeeID")] Enrollment enrollment)
@@ -79,10 +77,7 @@ namespace OrganizationDetails.Controllers
             ViewBag.EmployeeID = new SelectList(db.Employees, "EmployeeID", "LastName", enrollment.EmployeeID);
             return View(enrollment);
         }
-
-        // POST: /Enrollment/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include="EnrollmentID,Band,DepartmentID,EmployeeID")] Enrollment enrollment)

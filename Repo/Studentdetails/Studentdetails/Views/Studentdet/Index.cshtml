@@ -1,0 +1,43 @@
+﻿
+<div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+    <h2>Index</h2>
+    <div>
+        @Html.RenderAction()
+
+
+        @Ajax.ActionLink("All", "_student_all", new AjaxOptions
+        {
+            UpdateTargetId = "studentdiv",
+            HttpMethod = "Get",
+            InsertionMode = InsertionMode.Replace
+
+        })
+        <span color="blue"></span>
+        @Ajax.ActionLink("Top 3", "_student_top3", new AjaxOptions
+   {
+       UpdateTargetId = "studentdiv",
+       HttpMethod = "Get",
+       InsertionMode = InsertionMode.Replace
+
+   })
+        <span color="blue"></span>
+        @Ajax.ActionLink("Bottom 3", "_student_bottom3", new AjaxOptions
+   {
+       UpdateTargetId = "studentdiv",
+       HttpMethod = "Get",
+       InsertionMode = InsertionMode.Replace
+
+
+   })
+
+        <div id="studentdiv">
+
+
+        </div>
+
+
+    </div>
+</div>
