@@ -9,16 +9,16 @@ namespace LoginFunctionalityMVC.Models
         {
             if (HttpContext.Current.Session["UserID"] == null || !HttpContext.Current.Request.IsAuthenticated)
             {
-                if (filterContext.HttpContext.Request.IsAjaxRequest())
-                {
-                    filterContext.HttpContext.Response.StatusCode = 302; //Found Redirection to another page. Here- login page. Check Layout ajaxError() script.
-                    filterContext.HttpContext.Response.End();
-                }
-                else
-                {
+                //if (filterContext.HttpContext.Request.IsAjaxRequest())
+                //{
+                //    filterContext.HttpContext.Response.StatusCode = 302; //Found Redirection to another page. Here- login page. Check Layout ajaxError() script.
+                //    filterContext.HttpContext.Response.End();
+                //}
+                //else
+                //{
                     filterContext.Result = new RedirectResult(System.Web.Security.FormsAuthentication.LoginUrl + "?ReturnUrl=" +
                          filterContext.HttpContext.Server.UrlEncode(filterContext.HttpContext.Request.RawUrl));
-                }
+                //}
             }
             else
             {

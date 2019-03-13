@@ -15,7 +15,7 @@
     <title>Data Annotation</title>
 </head>
 <body>
-    @using (Html.BeginForm()) 
+    @using (Html.BeginForm("Index", "Registration", FormMethod.Post)) 
     {
         @Html.AntiForgeryToken()
         

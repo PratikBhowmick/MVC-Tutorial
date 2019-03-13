@@ -11,13 +11,7 @@ namespace MVC_HelloWorld
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                name: "Begin",
-                url: "Begin/MVC",
-                defaults: new { controller = "Home", action = "Begin", id = UrlParameter.Optional }
-            );
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");            
 
             routes.MapRoute(
                 name: "Default",

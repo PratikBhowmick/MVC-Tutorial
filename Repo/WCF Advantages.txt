@@ -1,0 +1,52 @@
+System.XML.Serialization
+System.Runtime.Serialization
+
+ASP.NET Web services send and receive messages by using SOAP over HTTP or HTTPS.
+WCF services use SOAP by default, but the messages can be in any format,
+and conveyed by using any transport protocol like HTTP,HTTPs, WS- HTTP, TCP, Named Pipes, MSMQ, P2P(Point to Point)
+
+Web services have “.asmx” extension, whereas Wcf services have “.svc” extension.
+
+The SOAP header can be customized. For a custom soap header, Create a class with required fields & derive it from SoapHeader to define the structure of the header
+
+In ASP.NET Web services, unhandled exceptions are returned to clients as SOAP faults. Instances of the SoapException class can also be thrown.
+In WCF services, unhandled exceptions are not returned to clients as SOAP faults. FaultContract can be used to exceptions to client.
+
+Web services don’t support multi-threading. Whereas WCF services Support multi-threading by using ServiceBehaviour class.
+
+Performance wise web services are slower than WCF service. This is because of the serializers they use.
+
+https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration
+
+
+Client 1 :
+Java Application (Message in XML format over HTTP protocol) -> WebService
+.Net Application (Message in binary format over net tcp protocol) -> .Net Remoting Service
+
+
+
+<system.serviceModel>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="mexBehaviour">
+          <serviceMetadata httpGetEnabled="true" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+    <services>
+      <service name="MathService.MathService" behaviorConfiguration="mexBehaviour">
+        <endpoint address="MathService" binding="basicHttpBinding" contract="MathService.IMathService">
+        </endpoint>
+        <endpoint address="MathService" binding="netTcpBinding" contract="MathService.IMathService">
+        </endpoint>
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8080/" />
+            <add baseAddress="net.tcp://localhost:8090"/>
+          </baseAddresses>
+        </host>
+      </service>
+    </services>
+  </system.serviceModel>
+

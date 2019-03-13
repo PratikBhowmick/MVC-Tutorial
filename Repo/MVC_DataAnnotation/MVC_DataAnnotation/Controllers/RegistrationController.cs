@@ -21,7 +21,7 @@ namespace MVC_DataAnnotation.Controllers
             if (ModelState.IsValid)
             {
                 //If all validations pass
-                return RedirectToAction("Registration", "Index");
+                return RedirectToAction("Index", "Registration");
             }
 
             return View(reg);

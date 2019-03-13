@@ -11,9 +11,9 @@ namespace MVC_ViewDataTempData.Controllers
         // GET: Sample
         public ActionResult Sample()
         {
-            ViewData["CurrentdateTime"] = "Hello";
+            ViewData["CurrentdateTime"] = "10/23/2018";
 
-            ViewBag.Name = "Besant Technologies";
+            ViewBag.Institute = "Besant Technologies";
 
             TempData["temp"] = "MVC";
 
@@ -32,15 +32,16 @@ namespace MVC_ViewDataTempData.Controllers
                 "England"
             };
 
-            ViewData["countries"] = cnt;
-
+            ViewData["Countries"] = cnt;
+            ViewBag.CurrentDate = System.DateTime.Today;
+            //ViewBag.Countries = cnt;
             return View();
         }
 
         public ActionResult RedirectAction()
         {
             //Doesnt gets value
-            string strViewBag = ViewBag.Name;
+            string strViewBag = ViewBag.Institute;
 
             //Doesnt gets value
             string strViewData = (ViewData["CurrentdateTime"]!=null) ? ViewData["CurrentdateTime"].ToString() : null;

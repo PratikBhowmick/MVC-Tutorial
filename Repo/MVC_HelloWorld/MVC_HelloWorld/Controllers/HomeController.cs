@@ -11,11 +11,6 @@ namespace MVC_HelloWorld.Controllers
         public ActionResult Index()
         {
             return View();
-        }
-
-        public ActionResult Begin()
-        {
-            return View();
-        }
+        }       
     }
 }

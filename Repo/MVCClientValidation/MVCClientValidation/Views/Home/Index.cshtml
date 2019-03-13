@@ -5,7 +5,7 @@
 }
 <style>
     .invalidFields{
-        border: 1px solid #ff0000 !important;
+        border: 1px solid #ff0000 !important;        
     }
 </style>
 
@@ -33,12 +33,12 @@
             <tr>
                 <td>@Html.LabelFor(m => m.Price)</td>
                 <td>@Html.TextBoxFor(m => m.Price)</td>
-                <td>@Html.ValidationMessageFor(m => m.Price)</td>
+                <td>@Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })</td>
             </tr>
             <tr>
                 <td>@Html.LabelFor(m => m.Quantity)</td>
                 <td>@Html.TextBoxFor(m => m.Quantity)</td>
-                <td>@Html.ValidationMessageFor(m => m.Quantity)</td>
+                <td>@Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })</td>
             </tr>
             <tr>
                 <td>
@@ -46,8 +46,13 @@
                     <input type="reset" value="Reset" class="btn btn-default" onclick="return clearFields()" />
                 </td>
             </tr>
+            <tr>
+                <td>@Html.CheckBox("Term")Agree to all terms and conditions</td>
+            </tr>
         </table>
-
+        <div id="termCheckMessage" style="visibility:hidden; color:orangered">
+            Please accept the terms and conditions
+        </div>
 
     </div>
 }

@@ -32,9 +32,8 @@ namespace MVC_EFCodeFirst.Controllers
         }
 
         public ActionResult Contact()
-        {C:\Users\pratik\Documents\Visual Studio 2015\Projects\C#Batch\MVC_EFCodeFirst\MVC_EFCodeFirst\Views\
+        {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

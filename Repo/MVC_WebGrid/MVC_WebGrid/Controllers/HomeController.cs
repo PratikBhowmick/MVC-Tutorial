@@ -15,27 +15,23 @@ namespace MVC_WebGrid.Controllers
             return "We are at home";
         }
 
-
-        //https://www.codeproject.com/Tips/615776/WebGrid-in-ASP-NET-MVC
-
-
         public ActionResult WebgridSample()
         {
             ObservableCollection<Product> inventoryList =
                 new ObservableCollection<Product>();
-            inventoryList.Add(new Product
-            {
-                Id = "P101",
-                Name = "Computer",
-                Description = "All type of computers",
-                Quantity = 800
-            });
+            
             inventoryList.Add(new Product
             {
                 Id = "P102",
                 Name = "Laptop",
                 Description = "All models of Laptops",
                 Quantity = 500
+            });inventoryList.Add(new Product
+            {
+                Id = "P101",
+                Name = "Computer",
+                Description = "All type of computers",
+                Quantity = 800
             });
             inventoryList.Add(new Product
             {

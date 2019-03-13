@@ -12,12 +12,13 @@
 </head>
 <body>
     <div> 
-        @foreach(var country in (List<string>)ViewData["countries"])
+        @foreach(string country in ViewData["Countries"] as List<string>)
         {
             <ul>
                 <li>@country</li>
             </ul>
         }
     </div>
+    <p>Current : @ViewBag.CurrentDate</p>
 </body>
 </html>

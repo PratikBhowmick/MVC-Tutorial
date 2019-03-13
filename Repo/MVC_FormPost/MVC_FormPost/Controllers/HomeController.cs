@@ -23,7 +23,9 @@ namespace MVC_FormPost.Controllers
             string gender = person.Gender;
             string city = person.City;
 
-            return View();
+            //Store it to database
+
+            return View("Index");
         }
     }
 }

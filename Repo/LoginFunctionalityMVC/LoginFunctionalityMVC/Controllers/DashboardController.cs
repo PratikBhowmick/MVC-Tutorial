@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace LoginFunctionalityMVC.Controllers
 {
-    [CheckAuthorization]
+    [CheckAuthorization]    
     public class DashboardController : Controller
     {
         // GET: Dashboard

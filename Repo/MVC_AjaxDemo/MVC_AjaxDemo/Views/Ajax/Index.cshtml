@@ -8,24 +8,36 @@
     <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
 }
 
-<h2>Index</h2>
-@Ajax.BeginForm("ShowDetails", "Ajax",
-     new AjaxOptions
-     {
-         HttpMethod = "POST",
-         UpdateTargetId = "div1",
-         InsertionMode = InsertionMode.Replace,
-         LoadingElementId = "waitimage"
-     })
-<h1>Enter Product Code</h1>
-<h2>
-    Product Code: @Html.TextBox("txtCode")<br />
-    <input type="submit" value="Show Details" />
-    <input type="reset" value="Clear" />
-</h2>
-@{Html.EndForm();}
+<h2 style="text-align:center; font-style:italic">Product Details Repository</h2>
+@using (Ajax.BeginForm("ShowDetails", "Ajax",
+         new AjaxOptions
+         {
+             HttpMethod = "POST",
+             UpdateTargetId = "div1",
+             InsertionMode = InsertionMode.Replace,
+             LoadingElementId = "waitimage"
+         }))
+{
+<br /><br />
+<div>
+    <table>
+        <tr>
+            <td>Enter Product Code: @Html.TextBox("txtCode")</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Details" />
+            <input type="reset" value="Clear" /></td>
+        </tr>
+    </table>
+    
+</div>
+}
+@*@{Html.EndForm();}*@
 <br />
 <img id="waitimage" src="~/Images/loading42.gif" style="display:none" />
 <br />
+
 <div id="div1">
+
 </div>
