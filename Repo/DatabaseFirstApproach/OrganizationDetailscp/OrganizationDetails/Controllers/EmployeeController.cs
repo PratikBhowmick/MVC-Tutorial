@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; 
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using OrganizationDetails.DataAccess;
 using OrganizationDetails.Models;
 
 namespace OrganizationDetails.Controllers
@@ -29,9 +30,9 @@ namespace OrganizationDetails.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            //DataAccess.DAL dal = new DataAccess.DAL();
-            //Employee employee = dal.GetEmployee(id.Value);
-            Employee employee = db.Employees.Find(id);
+            DAL dal = new DAL();
+            Employee employee = dal.GetEmployee(id.Value);
+            //Employee employee = db.Employees.Find(id);
 
             if (employee == null)
             {
@@ -53,11 +54,11 @@ namespace OrganizationDetails.Controllers
         {
             if (ModelState.IsValid)
             {
-                //DataAccess.DAL dal = new DataAccess.DAL();
-                //dal.InsertEmployee(employee);
+                DAL dal = new DAL();
+                dal.InsertEmployee(employee);
 
-                db.Employees.Add(employee);
-                db.SaveChanges();
+                //db.Employees.Add(employee);
+                //db.SaveChanges();
                 return RedirectToAction("Index");
             }
 

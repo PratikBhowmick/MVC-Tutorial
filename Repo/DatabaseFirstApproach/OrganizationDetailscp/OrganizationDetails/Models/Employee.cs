@@ -22,9 +22,15 @@ namespace OrganizationDetails.Models
         }
     
         public int EmployeeID { get; set; }
+
+        [Required]
         public string LastName { get; set; }
+
+        [Required]
         public string FirstName { get; set; }
-        [DataType(DataType.Date), DisplayFormat(DataFormatString = @"{0:dd\/MM\/yyyy}",ApplyFormatInEditMode = true)]
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public Nullable<System.DateTime> JoiningDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
