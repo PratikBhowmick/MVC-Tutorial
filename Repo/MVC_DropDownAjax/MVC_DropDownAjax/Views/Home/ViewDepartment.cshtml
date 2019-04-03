@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "ViewDepartment";
+}
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "/Home/GetAllDepartments",
+            data: "{}",
+            success: function (data) {
+                var s = '<option value="-1">Please Select a Department</option>';
+                for (var i = 0; i < data.length; i++) {
+                    s += '<option value="' + data[i].Id + '">' + data[i].Name + '</option>';
+                }
+                $("#departmentsDropdown").html(s);
+            }
+        });
+    });
+</script>
+
+<h2>Choose Department</h2>
+
+<form id="myForm">
+    <label for="departmentsDropdown"><b>Departments</b></label>
+    <select class="form-control" style="height:30px;width:230px;" id="departmentsDropdown" name="departmentsDropdown"></select>
+</form> 
+
