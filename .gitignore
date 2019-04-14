@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Repo/MVC_FileUploadDownload/MVC_FileUploadDownload/App_Data/uploads/Letter Infosys.jpeg
+/Repo/MVC_FileUploadDownload/MVC_FileUploadDownload/App_Data/uploads/IMG-20161003-WA0003.jpeg
+/Repo/MVC_FileUploadDownload/MVC_FileUploadDownload/App_Data/uploads/IMG-20161003-WA0001.jpeg
+/Repo/MVC_FileUploadDownload/MVC_FileUploadDownload/App_Data/uploads/DemoImport.xlsx

@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Upload";
+}
+
+<h2>Upload you files here !!</h2>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#btnUploadFile').on('click', function () {
+            var data = new FormData();
+            var files = $("#fileUpload").get(0).files;
+            // Add the uploaded image content to the form data collection
+            if (files.length > 0) {
+                data.append("UploadedImage", files[0]);
+            }
+            // Make Ajax request with the contentType = false, and procesDate = false
+            var ajaxRequest = $.ajax({
+                type: "POST",
+                url: "/Home/Index",
+                contentType: false,
+                processData: false,
+                data: data
+            });
+
+            ajaxRequest.done(function (xhr, textStatus) {
+                // Do other operation
+                $("#success").append("<b>File uploaded sucessfully</b>");
+            });
+        });
+    });
+</script>
+<div id="success" style="color:crimson;"></div>
+<div>
+    <table>
+        <tr>
+            <td><input type="file" name="FileUpload" id="fileUpload" style="font-size:12px" /></td>
+            <td><input id="btnUploadFile" type="button" value="Upload File" style="font-size:12px" /></td>
+        </tr>
+    </table>
+    
+    
+</div>
+<br /><br />
+@Html.ActionLink("My uploaded documents", "Downloads") 

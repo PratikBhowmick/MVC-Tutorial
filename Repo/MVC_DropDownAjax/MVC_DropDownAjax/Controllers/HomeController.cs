@@ -14,6 +14,7 @@ namespace MVC_DropDownAjax.Controllers
             return View("ViewDepartment");
         }
 
+        
         public JsonResult GetAllDepartments()
         {
             List<Department> listOfDept = new List<Department>();

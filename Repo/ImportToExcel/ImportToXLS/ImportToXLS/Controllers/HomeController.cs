@@ -103,12 +103,8 @@ namespace ImportToXLS.Controllers
                     cmd.ExecuteNonQuery();
                     con.Close();
                 }
-
             }
             return View();
         }
-
-
-
     }
 }
